@@ -1,3 +1,5 @@
+"use strict";
+
 // 1. String concatenation
 console.log("my" + "cat");
 console.log("1" + 2);
@@ -176,12 +178,17 @@ for (let i = 0; i < 10; i++) {
 // break, continue
 // Q1. iterate from 0 to 10 and print only even numbers (use continue)
 for (let i = 0; i < 11; i++) {
-  if (i % 2 === 0) {
+  if (i % 2 !== 0) {
     continue;
   }
   console.log(`i: ${i}`);
 }
 
+for (let i = 0; i < 11; i++) {
+  if (i % 2 === 0) {
+    console.log(`i: ${i}`);
+  }
+}
 // Q2. iterate from 0 to 10 and print numbers until reaching 8 (use break)
 for (let i = 0; i < 11; i++) {
   if (i > 8) {

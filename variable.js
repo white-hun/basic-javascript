@@ -43,7 +43,7 @@ const maxNumber = 5;
 
 // 4. Variable types
 // type에 따라서 메모리에 저장 되는 방법이 다른 방식으로 저장된다
-// primitive- single item: number, string, boolean, null, undefined, symbol
+// premitive- single item: number, string, boolean, null, undefined, symbol
 // primitive type- value로 값이 저장
 // object- box container
 // object type- object를 가르키는 reference가 저장
