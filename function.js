@@ -33,13 +33,13 @@ const white = { name: "white" };
 changeName(white);
 console.log(white);
 
-// 3. Default parameters (addid in ES6)
+// 3. Default parameters (added in ES6)
 function showMessage(message, from = "unknown") {
   console.log(`${message} by ${from}`); // from: 어디에서 message가 왔는지
 }
 showMessage("Hi!");
 
-// 4. Pest paraneters (added in ES6)
+// 4. Rest paraneters (added in ES6)
 function printAll(...args) {
   // args의 갯수 만큼 반복
   for (let i = 0; i < args.length; i++) {
@@ -64,7 +64,7 @@ function printMessage() {
     console.log(message);
     let childMessage = "Hello";
   }
-  //   return undefined; // return이 없는 함수는 return undefined;와 같다
+  //   return undefined; // return이 없는 함수는 return undefined;3  과 같다
 }
 printMessage();
 
@@ -124,7 +124,7 @@ const printYes = function () {
   console.log("Yes!");
 };
 // named function
-// better debugging in debugger's stack traces
+// better debugging in debugger's stack traces // 디버깅할 때
 // recursions // 피보나치 수, 반복되는 평균값
 const printNo = function print() {
   console.log("no!");
@@ -134,7 +134,7 @@ randomQuiz("love you", printYes, printNo);
 
 // recursions // 피보나치 수, 반복되는 평균값
 // const printNo = function print() {
-//     console.log("no!");
+//     console.log("no!"); // 리커젼
 //     print();
 //   };
 //   randomQuiz("wrong", printYes, printNo);
