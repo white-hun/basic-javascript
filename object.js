@@ -4,7 +4,7 @@
 // on of the JavaScript's data types.
 // a collection of related data and/or functionality
 // Nearly all object in Java Script are instances of Object
-// object = { key: value}
+// object = { key: value }의 집합체
 
 // 1. Literals and properties
 const obj1 = {}; // 'object literal' syntax
@@ -28,8 +28,8 @@ delete white.hasJob;
 console.log(white.hasJob);
 
 // 2. Computed poperties
-console.log(white.name);
-console.log(white["name"]);
+console.log(white.name); // 바로 해당값을 받아오고 싶을 때
+console.log(white["name"]); // key는 string type으로 가져와야한다 // 정확하게 어떤 key가 필요한지 모를 때
 white["hasJob"] = true;
 console.log(white.hasJob);
 
@@ -85,13 +85,14 @@ console.log(user);
 // old way
 const user3 = {};
 for (key in user) {
-  user3[key] = user[key];
+  user3[key] = user[key]; // user3 속성 name을 추가 값은 user에 있는 key의 value를 할당
 }
 console.clear();
 console.log(user3);
 
-const user4 = {};
-Object.assign(user4, user);
+// const user4 = {};
+// Object.assign(user4, user);
+const user4 = Object.assign({}, user);
 console.log(user4);
 
 // another example
