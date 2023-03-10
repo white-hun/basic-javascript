@@ -5,14 +5,23 @@
 
 // 1. async
 async function fetchUser() {
+  // do network request in 10 secs...
   return "white";
 }
+
+// function fetchUser() {
+//   return new Promise((resolve, reject) => {
+//     // do network request in 10 secs...
+//     resolve("white");
+//   });
+// }
 
 const user = fetchUser();
 user.then(console.log);
 console.log(user);
 
 // 2. await
+// async 가 붙은 함수 안에서만 쓸 수 있다
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
